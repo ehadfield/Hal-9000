@@ -1,3 +1,4 @@
+//Backend Business
 function halsResponse(numberInput) {
   var theArray = [];
   var count = -1;
@@ -7,34 +8,23 @@ function halsResponse(numberInput) {
       for (var i = 0; i < numberInput +1; i++) {
         count ++;
         theArray.push(count);
-      }
     }
-console.log(theArray);
+  }
+
 var newString = theArray.join();
 var endArray = newString.split(",");
-console.log(newString);
-console.log(endArray);
-for (var j = 0; j < endArray.length; j++) {
-  if (endArray[j].includes("3")) {
-    endArray[j] = " I'm sorry, Dave. I'm afraid I can't do that.";
-    console.log('you found 3')
-  }else if (endArray[j].includes("2")) {
-    endArray[j] = " Boop";
-    console.log('you found 2')
-  }else if (endArray[j].includes("1")) {
-    endArray[j] = " Beep";
-    console.log('you found 1')
+
+  for (var j = 0; j < endArray.length; j++) {
+    if (endArray[j].includes("3")) {
+      endArray[j] = " I'm sorry, Dave. I'm afraid I can't do that.";
+    }else if (endArray[j].includes("2")) {
+      endArray[j] = " Boop";
+    }else if (endArray[j].includes("1")) {
+      endArray[j] = " Beep";
+    }
   }
+  return endArray;
 }
-return endArray;
-}
-
-
-
-
-
-
-
     // for (var j = 0; j < theArray.length; j++) {
       // if (theArray[j] === 1){
         // theArray[j] = " Beep";
