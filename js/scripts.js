@@ -42,7 +42,6 @@ $(document).ready(function() {
     $("#output").empty();
     var numberInput = parseInt($("input#davesInput").val());
     var outPut = halsResponse(numberInput);
-
     $("#result").text(outPut);
 
   });
