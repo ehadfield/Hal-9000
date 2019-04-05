@@ -1,10 +1,10 @@
-# Ping Pong
+# HAL 9000
 ### 4.5.2019
 
 ## Evan Hadfield
 
 
-## Ping-Pong
+## HAL 9000
 
 This is a web application that takes a number from a user and returns a range of numbers from 0 to the chosen number with the following exceptions:
 
