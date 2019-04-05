@@ -1,21 +1,22 @@
 function halsResponse(numberInput) {
   var theArray = [];
-  var count = 0;
+  var count = -1;
     if (isNaN(numberInput)) {
       return theArray;
     }else {
-      for (var i = 0; i < numberInput; i++) {
+      for (var i = 0; i < numberInput +1; i++) {
         count ++;
         theArray.push(count);
       }
     }
+console.log(theArray);
     for (var j = 0; j < theArray.length; j++) {
       if (theArray[j] === 1){
-        theArray[j] = "Beep";
+        theArray[j] = " Beep";
       }else if (theArray[j] === 2){
-        theArray[j] = "Boop";
+        theArray[j] = " Boop";
       }else if (theArray[j] === 3){
-        theArray[j] = "I'm sorry, Dave. I'm afraid I can't do that.";
+        theArray[j] = " I'm sorry, Dave. I'm afraid I can't do that.";
       }
     }
     return theArray;
@@ -33,6 +34,7 @@ function halsResponse(numberInput) {
 $(document).ready(function() {
   $("form#halNine").submit(function(event) {
     event.preventDefault();
+    $("#output").empty();
     var numberInput = parseInt($("input#davesInput").val());
     var outPut = halsResponse(numberInput);
 
