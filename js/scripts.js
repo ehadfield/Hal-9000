@@ -10,13 +10,25 @@ function halsResponse(numberInput) {
       }
     }
 console.log(theArray);
-var newString = String(theArray);
+var newString = theArray.join();
+var endArray = newString.split(",");
 console.log(newString);
-for (var j = 0; j < newString.length; j++) {
-  if (newString.includes(1)){
-    var ones = newString.replace(1, "Beep");
+console.log(endArray);
+for (var j = 0; j < endArray.length; j++) {
+  if (endArray[j].includes("3")) {
+    endArray[j] = " I'm sorry, Dave. I'm afraid I can't do that.";
+    console.log('you found 3')
+  }else if (endArray[j].includes("2")) {
+    endArray[j] = " Boop";
+    console.log('you found 2')
+  }else if (endArray[j].includes("1")) {
+    endArray[j] = " Beep";
+    console.log('you found 1')
   }
 }
+return endArray;
+}
+
 
 
 
@@ -32,16 +44,6 @@ for (var j = 0; j < newString.length; j++) {
         // theArray[j] = " I'm sorry, Dave. I'm afraid I can't do that.";
       // }
     // }
-    return theArray;
-}
-
-
-
-
-
-
-
-
 
 //Frontend Business
 $(document).ready(function() {
