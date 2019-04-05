@@ -10,15 +10,28 @@ function halsResponse(numberInput) {
       }
     }
 console.log(theArray);
-    for (var j = 0; j < theArray.length; j++) {
-      if (theArray[j] === 1){
-        theArray[j] = " Beep";
-      }else if (theArray[j] === 2){
-        theArray[j] = " Boop";
-      }else if (theArray[j] === 3){
-        theArray[j] = " I'm sorry, Dave. I'm afraid I can't do that.";
-      }
-    }
+var newString = String(theArray);
+console.log(newString);
+for (var j = 0; j < newString.length; j++) {
+  if (newString.includes(1)){
+    var ones = newString.replace(1, "Beep");
+  }
+}
+
+
+
+
+
+
+    // for (var j = 0; j < theArray.length; j++) {
+      // if (theArray[j] === 1){
+        // theArray[j] = " Beep";
+      // }else if (theArray[j] === 2){
+        // theArray[j] = " Boop";
+      // }else if (theArray[j] === 3){
+        // theArray[j] = " I'm sorry, Dave. I'm afraid I can't do that.";
+      // }
+    // }
     return theArray;
 }
 
