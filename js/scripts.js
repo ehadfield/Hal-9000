@@ -1,23 +1,25 @@
 function halsResponse(numberInput) {
-  var theArray = [], count 0;
-  if (inNaN(numberInput)) {
-    return theArray;
-  }else {
-    for (var i = 0; i < numberInput; 1++){
-      count ++;
-      theArray.push(count);
-    }
-    for (var i = 0; i < theArray.length; 1++){
-      if (theArray[i] === 1){
-        theArray[i] = "Beep";
-      }else if (theArray[i] === 2){
-        theArray[i] = "Boop";
-      }else if (theArray[i] === 3){
-        theArray[i] = "I'm sorry, Dave. I'm afraid I can't do that";
+  var theArray = [];
+  var count = 0;
+    if (isNaN(numberInput)) {
+      return theArray;
+    }else {
+      for (var i = 0; i < numberInput; i++) {
+        count ++;
+        theArray.push(count);
       }
-    }return theArray;
-  }
-};
+    }
+    for (var j = 0; j < theArray.length; j++) {
+      if (theArray[j] === 1){
+        theArray[j] = "Beep";
+      }else if (theArray[j] === 2){
+        theArray[j] = "Boop";
+      }else if (theArray[j] === 3){
+        theArray[j] = "I'm sorry, Dave. I'm afraid I can't do that.";
+      }
+    }
+    return theArray;
+}
 
 
 
